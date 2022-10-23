@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RecycleLevels</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Camera</string>
+    <string name="title_notifications">Result</string>
+
+    <string name="CameraFragmentTxt">Camera</string>
+    <string name="welcome_string">Welcome to Recycle Levels</string>
+    <string name="edit_message">Enter a message:</string>
+    <string name="button_send">Send</string>
+    <string name="button_analyze">Analyze</string>
+    <string name="button_photo">Take Photo</string>
+    <string name="take_photo">Take Photo</string>
+</resources>

@@ -5,18 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-    android:orientation="vertical"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".InferenceActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemBackground="@color/design_default_color_on_primary"
+        app:itemBackground="@color/colorPrimary"
         app:itemTextColor="#000000"
         app:itemIconTint="#000000"
-        app:menu="@menu/bottom_nav_menu"
+        app:menu="@menu/bottom_navigation_menu"
         android:layout_alignParentBottom="true"/>
 
     <ImageView
@@ -27,7 +25,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="192dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_dashboard_black_24dp"
+        android:src="@drawable/greenshot"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -88,5 +86,4 @@
         android:text="Inference"
         android:textSize="24sp"
         android:textStyle="bold" />
-
 </RelativeLayout>

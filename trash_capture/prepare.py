@@ -6,7 +6,7 @@ import pathlib
 import splitfolders
 
 # Specify the dataset location
-data_location = pathlib.Path('ml/dataset')
+data_location = pathlib.Path('trash_capture/data')
 
 
 def create_data_csv(filename, dataset):

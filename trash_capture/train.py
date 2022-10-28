@@ -10,8 +10,8 @@ from tensorflow.keras.applications import ResNet50, MobileNetV2, InceptionV3
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 
-def list_dataset():
-    for dirname, _, filenames in os.walk('ml/dataset'):
+def list_data():
+    for dirname, _, filenames in os.walk('trash_capture/data'):
         for filename in filenames:
             print(os.path.join(dirname, filename))
 
@@ -27,11 +27,11 @@ def class_id_to_label(id):
     return label_map[id]
     
 
-IMAGES_DIR = Path('ml/dataset/Garbage classification/Garbage classification/').absolute()
+IMAGES_DIR = Path('trash_capture/data/Garbage classification/Garbage classification/').absolute()
     
-train_file = Path('ml/dataset/one-indexed-files-notrash_train.txt').absolute()
-val_file   = Path('ml/dataset/one-indexed-files-notrash_val.txt').absolute()
-test_file  = Path('ml/dataset/one-indexed-files-notrash_test.txt').absolute()
+train_file = Path('trash_capture/data/one-indexed-files-notrash_train.txt').absolute()
+val_file   = Path('trash_capture/data/one-indexed-files-notrash_val.txt').absolute()
+test_file  = Path('trash_capture/data/one-indexed-files-notrash_test.txt').absolute()
 
 df_train = pd.read_csv(train_file, sep=' ', header=None, names=['rel_path', 'label'])
 df_valid = pd.read_csv(val_file,   sep=' ', header=None, names=['rel_path', 'label'])
@@ -141,7 +141,7 @@ nb_samples = len(filenames)
 
 net.evaluate_generator(test_generator, nb_samples)
 
-model_path = Path('ml/model')
+model_path = Path('trash_capture/model')
 model_path.mkdir(parents=True, exist_ok=True)
 model_name = datetime.now().strftime('%m_%d_%y_%H%M%S') + '.h5'
 print((model_path / model_name).absolute())

@@ -1,6 +1,6 @@
 # RecycleLevels
 
-We have designed an alpha version of an android app that utilizes a neural network we trained using the Google Cloud services.
+This was originally a Hackathon project, but my group didn't finish so I decided to work on it outside of the hackathon because i liked the idea. I've never used Android Studio before and barely used Java so this project was a daunting but very educational experience. We have designed an alpha version of an android app that utilizes a neural network we trained using the Google Cloud services.
 The app  allows the user to snap a photo of any piece of trash that is picked up and it is then classified into one of the 6 categories that the network was trained on. Based on the category, a point value and information about the category is displayed to the user. In future implementations we want to implement directions to the nearest recycling center.
 
 ### Built With
@@ -17,70 +17,44 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-
-### Installation
-
-1. To play the Demo run the main.exe executable found in `src/main.exe`
-
-
+1. Download the latest APK from the release section of this repo
+2. Open the app and take a picture of your trash
+3. Identify the trash
+4. Hopefully the AI trained identified the garbage, and you can learn more about your recycling your trash.
 
 <!-- USAGE EXAMPLES -->
-## SFML Usage
+## Machine Learning Usage
 
-SFML is a Game Development library that helps devs like me trying to break into the industry make games! This is my first project ever using the library but tutorials as well as online help made everything a breeze to understand and build!
+This wasn't my first time working with Tensorflow or the Google Cloud, I also used both in my [Nutriscan Repo](https://github.com/KaaiiH/NutriScan). But it was my first time working with a neural network and dataset. 
 
-_For more examples, please refer to the [SFML](https://github.com/SFML/SFML/tree/master/examples)_ github
-
+_For more examples, please refer to the [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/introduction-to-neural-networks/video-lecture)_ 
+Or refer to the [tutorial](https://cloud.google.com/ai-platform/docs/getting-started-keras) I followed
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
 - [x] Finished Fronted for Menu
-- [x] Finished Physics Demo
-- [ ] Physics Engine Revamp
-- [ ] Add Additional Character names Models, and abilities
-- [ ] Fix all current Linker Errors
-- [ ] CMake
+- [x] Improve neural network by training it with a dataset
+- [ ] Fix fatal bugs in app.
+- [ ] Improve UI looks on App
+- [ ] Add Mapping to nearest recycle center
+- [ ] Release on Google Playstore
+- [ ] IOS?
 
-See the [open issues](https://github.com/KaaiiH/Unibrow/issues) for a full list of proposed features (and known issues).
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 <!-- CONTACT -->
 ## Contact
 
 Kai Hoenshell - [@linkedin.com/in/kai-hoenshell](https://www.linkedin.com/in/kai-hoenshell/) - kaihoenshell1@gmail.com
 
-Project Link: [Unibrow](https://github.com/KaaiiH/Unibrow)
-
+Project Link: [GreenShot](https://github.com/KaaiiH/RecycleLevels)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 This is a list of resources I found helpful and would like to give credit to.
 
-* [SFML Project Examples](https://github.com/SFML/SFML/tree/master/examples)
-* [Patrick De Arteaga](https://patrickdearteaga.com)
-* [LF2 (Where I got my character resources)](https://grid.malven.co/)
-* [Spriters Resource](https://www.spriters-resource.com/genre/fighting/)
-* [Malven's Grid Cheatsheet](www.lf2.net)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
+* [How to Use and Train Google's Keras AI](https://cloud.google.com/ai-platform/docs/getting-started-keras)
+* [Andriod Studio](https://developer.android.com/studio)
+

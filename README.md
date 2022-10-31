@@ -3,6 +3,10 @@
 This was originally a Hackathon project, but my group didn't finish so I decided to work on it outside of the hackathon because i liked the idea. I've never used Android Studio before and barely used Java so this project was a daunting but very educational experience. We have designed an alpha version of an android app that utilizes a neural network we trained using the Google Cloud services.
 The app  allows the user to snap a photo of any piece of trash that is picked up and it is then classified into one of the 6 categories that the network was trained on. Based on the category, a point value and information about the category is displayed to the user. In future implementations we want to implement directions to the nearest recycling center.
 
+
+## Update
+There is a currently a AI breaking bug, One of the versino of tensorflow I used is deprecated. So until I change it and come out with a new release the latest released is fatally bugged :(
+
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
@@ -22,6 +26,18 @@ This section should list any major frameworks/libraries used to bootstrap your p
 3. Identify the trash
 4. Hopefully the AI trained identified the garbage, and you can learn more about your recycling your trash.
 
+Since I don't have an android I was only able to test it virtually via an emulator in Android Studio
+
+![image](https://user-images.githubusercontent.com/60765574/198944774-6317043f-ad73-40aa-a54a-79d935aa5f5d.png)
+
+After I took the picture and clicked Identify, tensorflow used the data created trained by the neural network to identify the trash and gave points
+
+![image](https://user-images.githubusercontent.com/60765574/198945334-60cb8819-e5e3-497c-b08f-1e500b413b75.png)
+
+Once the trash is identified it accumulates in the profile tab.
+
+![image](https://user-images.githubusercontent.com/60765574/198945898-c26e7818-2399-4de3-91de-1ad11271273c.png)
+
 <!-- USAGE EXAMPLES -->
 ## Machine Learning Usage
 
@@ -36,12 +52,13 @@ Or refer to the [tutorial](https://cloud.google.com/ai-platform/docs/getting-sta
 
 - [x] Finished Fronted for Menu
 - [x] Improve neural network by training it with a dataset
-- [ ] Fix fatal bugs in app.
+- [ ] Fix deprecated tensorflow bug in app
 - [ ] Improve UI looks on App
 - [ ] Add Mapping to nearest recycle center
 - [ ] Release on Google Playstore
 - [ ] IOS?
 
+See the [open issues](https://github.com/KaaiiH/RecycleLevels/issues) for a full list of proposed features (and known issues).
 
 <!-- CONTACT -->
 ## Contact
